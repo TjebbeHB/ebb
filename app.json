@@ -1,0 +1,105 @@
+{
+  "expo": {
+    "name": "Ebb",
+    "slug": "ebb-cycle",
+    "version": "1.4.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "scheme": "ebb",
+    "backgroundColor": "#FFF8E9",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.ebbcycle.ebb",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyCollectedDataTypes": []
+      },
+      "buildNumber": "5",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "app.ebbcycle.ebb",
+      "versionCode": 5,
+      "adaptiveIcon": {
+        "backgroundColor": "#FFF8E9",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.health.READ_SLEEP",
+        "android.permission.health.READ_RESTING_HEART_RATE"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "./plugins/with-no-push-entitlement.cjs",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#C64C0C"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Ebb uses Face ID only to unlock the app on this device."
+        }
+      ],
+      "expo-secure-store",
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "NSHealthShareUsageDescription": "Ebb reads cycle tracking data (periods, spotting, cervical mucus, ovulation and pregnancy tests, symptoms, basal temperature) to import your history from other apps, and sleep and resting heart rate for wellbeing patterns. Everything stays on this device; nothing is written back or uploaded.",
+          "NSHealthUpdateUsageDescription": false,
+          "background": false
+        }
+      ],
+      "./plugins/with-health-privacy.cjs",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26,
+            "kotlinVersion": "2.2.21"
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ebb uses photos you choose to help you record a meal. Photos stay on your device.",
+          "cameraPermission": "Ebb uses your camera to photograph a meal for you to review and log.",
+          "microphonePermission": false
+        }
+      ],
+      "./plugins/with-local-ai-build.cjs",
+      "expo-splash-screen"
+    ]
+  }
+}

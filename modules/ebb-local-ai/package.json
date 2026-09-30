@@ -1,0 +1,7 @@
+{
+  "name": "ebb-local-ai",
+  "version": "1.0.0",
+  "description": "Private on-device meal recognition and durable storage for Ebb",
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,0 +1,22 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'app.ebb.localai'
+version = '1.0.0'
+
+android {
+  namespace 'expo.modules.ebblocalai'
+  defaultConfig {
+    minSdkVersion 26
+    versionCode 1
+    versionName '1.0.0'
+  }
+}
+
+dependencies {
+  // 0.17 requires Kotlin 2.4. The app pins Kotlin 2.2.21 for 0.16.1 metadata.
+  implementation 'com.google.ai.edge.litertlm:litertlm-android:0.16.1'
+  testImplementation 'junit:junit:4.13.2'
+}

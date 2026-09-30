@@ -1,0 +1,15 @@
+{
+  "operationalData": {
+    "cycles": [
+      { "period_start_date": "__C1__", "period_end_date": "__C1E__", "pregnant": false },
+      { "period_start_date": "__C2__", "period_end_date": "__C2E__", "pregnant": false },
+      { "period_start_date": "__C3__", "period_end_date": "__C3E__", "pregnant": false }
+    ],
+    "point_events_manual_v2": [
+      { "date": "__E1__ 00:00:00", "category": "Symptoms", "subcategory": "Cramps" },
+      { "date": "__E1__ 00:00:00", "category": "Mood", "subcategory": "Irritated" },
+      { "date": "__E2__ 00:00:00", "category": "Fluid", "subcategory": "Eggwhite" },
+      { "date": "__E2__ 00:00:00", "category": "Symptoms", "subcategory": "Sparkly toes" }
+    ]
+  }
+}

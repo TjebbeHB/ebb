@@ -1,0 +1,1 @@
+A private, on-device cycle and wellbeing diary for iOS and Android. Track periods, symptoms and meals, explore patterns, and optionally recognize food locally on Android. Built with Expo, React Native and TypeScript.
