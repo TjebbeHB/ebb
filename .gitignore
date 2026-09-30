@@ -1,0 +1,51 @@
+# Dependencies and generated projects
+node_modules/
+.expo/
+/dist/
+/dist-web/
+/android/
+/ios/
+**/build/
+**/.gradle/
+**/.cxx/
+Pods/
+DerivedData/
+
+# Local tooling, test output and release binaries
+.claude/
+.codex/
+/artifacts/
+/releases/
+/design-concepts/
+test-results/
+playwright-report/
+coverage/
+*.log
+.DS_Store
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+credentials.json
+local.properties
+*.keystore
+*.jks
+*.p8
+*.p12
+*.pem
+*.key
+*.mobileprovision
+*.provisionprofile
+
+# App packages, downloaded models and personal exports
+*.apk
+*.aab
+*.ipa
+*.xcarchive/
+*.litertlm
+*.gguf
+*.tflite
+*.onnx
+*.part
+/private-data/
