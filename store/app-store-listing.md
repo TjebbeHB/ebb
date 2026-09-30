@@ -5,8 +5,9 @@
 **Category**: Health & Fitness (secondary: Medical)
 **Price**: Free. No in-app purchases.
 **Age rating**: 12+ (medical/treatment information: infrequent; no other flags). Answer "No" to unrestricted web access, gambling, contests.
-**Support URL**: your website or a GitHub issues page.
-**Marketing URL**: optional.
+**Support URL**: https://github.com/TjebbeHB/ebb/issues
+**Marketing URL**: https://tjebbehb.github.io/ebb/
+**Privacy Policy URL**: https://tjebbehb.github.io/ebb/privacy.html
 **Copyright**: 2026 Tjebbe Boersma.
 
 ## Promotional text (170)

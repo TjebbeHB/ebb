@@ -8,12 +8,19 @@
     <img alt="React Native" src="https://img.shields.io/badge/React_Native-0.86-BF4B28?style=flat-square" />
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-28231F?style=flat-square" />
     <img alt="Status: in development" src="https://img.shields.io/badge/status-in_development-BF4B28?style=flat-square" />
+    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-28231F?style=flat-square" /></a>
   </p>
+  <p><a href="https://tjebbehb.github.io/ebb/"><strong>Visit the project site →</strong></a></p>
 </div>
 
-![Ebb design exploration: an ivory and burnt-orange Today screen alongside a meal review screen](docs/images/ebb-design-preview.png)
+<p align="center">
+  <img src="docs/images/screen-today.png" alt="Ebb Today screen" width="200" />
+  <img src="docs/images/screen-log.png" alt="Ebb daily log" width="200" />
+  <img src="docs/images/screen-calendar.png" alt="Ebb calendar" width="200" />
+  <img src="docs/images/screen-insights.png" alt="Ebb insights" width="200" />
+</p>
 
-*Ivory & Ember — an AI-generated visual direction for Ebb, not a screenshot of the current build. The current app uses an ivory-and-orange interface; this refined design is an exploration.*
+*Screens from the current build, shown with synthetic sample data. Regenerate them with `node scripts/capture_site_screenshots.mjs` while the web preview runs.*
 
 ## A diary that belongs to you
 
@@ -52,7 +59,7 @@ The native food module supports optional Gemma 4 E2B/E4B downloads on Android. M
 - Retained photos and model files use private storage excluded from OS backup. Ordinary diary storage relies on platform protections; it does not have a separate app-level encrypted database. App lock controls access through Ebb's UI.
 - Uninstalling removes private app data. Export a backup before changing devices; install updates over an existing installation when preserving data and models.
 
-See [food storage and recognition](FOOD_LOGGING.md) and the [privacy policy template](store/privacy-policy.md) for details. Store submission metadata is a draft and must be reviewed before release.
+See [food storage and recognition](FOOD_LOGGING.md) and the [privacy policy](https://tjebbehb.github.io/ebb/privacy.html) for details. Store submission metadata is a draft and must be reviewed before release.
 
 ## Run locally
 
@@ -139,4 +146,12 @@ Generated native projects, dependencies, release packages, local credentials and
 
 When reporting a bug, include the app version, phone model, OS version and steps to reproduce. Use synthetic examples rather than personal health records, exports or unredacted screenshots.
 
-An open-source license has not been selected yet. Public repository access alone does not grant an open-source license. Third-party dependencies and optional model weights remain subject to their own terms.
+## Project site
+
+The website at [tjebbehb.github.io/ebb](https://tjebbehb.github.io/ebb/) is plain HTML, CSS and JavaScript in [`docs/`](docs/), served by GitHub Pages with no build step. It also hosts the [privacy policy](https://tjebbehb.github.io/ebb/privacy.html) that the App Store and Google Play require. Preview it locally with `python3 -m http.server 8090 --directory docs`.
+
+## License
+
+Ebb is free software under the [MIT License](LICENSE). You may use, copy, change and redistribute it, including in your own apps, as long as the copyright and license notice stay with it.
+
+Third-party dependencies and bundled fonts (DM Sans and DM Serif Display, SIL Open Font License) keep their own licenses. Optional on-device model weights are downloaded separately and are subject to their providers' terms.

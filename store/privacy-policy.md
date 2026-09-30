@@ -1,6 +1,6 @@
 # Ebb privacy policy
 
-Last updated 19 September 2026.
+Last updated 30 September 2026.
 
 Ebb is a menstrual cycle tracker that runs entirely on your device.
 
@@ -22,4 +22,6 @@ Ebb is a menstrual cycle tracker that runs entirely on your device.
 
 **Changes:** if this policy changes, the new version ships with the app update and the date above is updated.
 
-**Contact:** [Set a project support email before publication]
+**Contact:** https://github.com/TjebbeHB/ebb/issues (please do not include personal health information in a public issue).
+
+The published version of this policy lives at https://tjebbehb.github.io/ebb/privacy.html.

@@ -39,7 +39,7 @@ Alternative without a Mac build: `npx eas-cli build --platform ios --profile pro
 ## Files you will be asked for
 
 - `store/app-store-listing.md`: name, subtitle, description (the medical disclaimer is in the first paragraph, which Google Play requires and Apple accepts), keywords, category, age rating answers.
-- `store/privacy-policy.md`: publish this at any URL (a GitHub Pages page or a Notion page is fine). Both stores require a link.
+- Privacy policy URL: https://tjebbehb.github.io/ebb/privacy.html (source in `docs/privacy.html`; keep `store/privacy-policy.md` in sync). Both stores require a link.
 - `store/app-privacy.md`: answers for the App Privacy questionnaire ("Data Not Collected").
 - `store/review-notes.md`: notes for App Review explaining HealthKit, camera and photo use, and that no account is needed.
 - `store/testflight-what-to-test.md`: the test instructions for external groups.
